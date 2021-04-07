@@ -113,7 +113,7 @@ int main(void)
 		/* USER CODE BEGIN 3 */
 
 		//RAW Read
-//		if (micros() - Timestamp_Encoder > 1000)
+//		if (micros() - Timestamp_Encoder >= 1000)
 //		{
 //			Timestamp_Encoder = micros();
 //			EncoderVel = EncoderVelocity_Update();
@@ -122,7 +122,7 @@ int main(void)
 
 
 		//Add LPF?
-//		if (micros() - Timestamp_Encoder > 100)
+//		if (micros() - Timestamp_Encoder >= 100)
 //		{
 //			Timestamp_Encoder = micros();
 //			EncoderVel = (EncoderVel * 99 + EncoderVelocity_Update()) / 100.0;
